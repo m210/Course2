@@ -6,7 +6,6 @@ public class Car extends Bicycle {
         super(modelName, wheelsCount);
     }
 
-    @Override
     public void checkEngine() {
         System.out.println("Проверяем двигатель");
     }

@@ -2,7 +2,7 @@ package com.company.Lesson1;
 
 public class Main {
     public static void main(String[] args) {
-        Mover list[] = {
+        Bicycle list[] = {
             new Car("car1", 4),
             new Car("car2", 4),
             new Truck("truck1", 6),
@@ -12,7 +12,7 @@ public class Main {
         };
 
         ServiceStation station = new ServiceStation();
-        for(Mover obj : list)
-            station.check(obj);
+        for(Bicycle obj : list)
+            station.checkVehicle(obj);
     }
 }

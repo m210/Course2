@@ -1,6 +1,6 @@
 package com.company.Lesson1;
 
-public class Bicycle implements Mover {
+public class Bicycle {
 
     private final String modelName;
     private final int wheelsCount;
@@ -10,17 +10,14 @@ public class Bicycle implements Mover {
         this.wheelsCount = wheelsCount;
     }
 
-    @Override
     public String getModelName() {
         return modelName;
     }
 
-    @Override
     public int getWheelsCount() {
         return wheelsCount;
     }
 
-    @Override
     public void updateTyre() {
         System.out.println("Меняем покрышку");
     }
