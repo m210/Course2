@@ -6,7 +6,13 @@ public class Truck extends Car {
         super(modelName, wheelsCount);
     }
 
-    public void checkTrailer() {
+    protected void checkTrailer() {
         System.out.println("Проверяем прицеп");
+    }
+
+    @Override
+    public void check() {
+        super.check();
+        checkTrailer();
     }
 }
