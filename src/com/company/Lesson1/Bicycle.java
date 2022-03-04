@@ -1,11 +1,19 @@
 package com.company.Lesson1;
 
-public class Bicycle {
+public class Bicycle extends Vehicle {
 
-    public String modelName;
-    public int wheelsCount;
+    public Bicycle(String modelName, int wheelsCount) {
+        super(modelName, wheelsCount);
+    }
 
-    public void updateTyre() {
+    protected void updateTyre() {
         System.out.println("Меняем покрышку");
     }
+
+    @Override
+    public void check() {
+        for(int i = 0; i < getWheelsCount(); i++)
+            updateTyre();
+    }
+
 }
